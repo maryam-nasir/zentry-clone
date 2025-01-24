@@ -1,7 +1,9 @@
 const App = () => {
   return (
     <>
-      <h1>Welcome to Awwwards Website</h1>
+      <h1 className="text-5xl font-bold text-orange-500">
+        Welcome to Awwwards Website
+      </h1>
     </>
   );
 };
