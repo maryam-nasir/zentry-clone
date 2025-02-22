@@ -1,50 +1,69 @@
-# React + TypeScript + Vite
+# An Awwwards Winning Website - Zentry Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Disclaimer
 
-Currently, two official plugins are available:
+All design credits go to [Zentry](https://zentry.com/). This project is not intended for commercial use or public deployment.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Zentry is a beautiful and visually captivating website which features scroll-tiggered animations, geometric transitions, and engaging video storytelling. Access [here](https://zentry-clone-rouge.vercel.app/).
 
-## Expanding the ESLint configuration
+## Tech Stack:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React
+- Tailwind CSS
+- GSAP
 
-- Configure the top-level `parserOptions` property like this:
+## Main Features:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **Scroll-Based Animations**: Dynamic animations triggered by scrolling for a more engaging user experience.
+
+- **Clip Path Shaped Animations**: Unique geometric transitions using CSS clip-paths to create visually stunning effects.
+
+- **3D Hover Effects**: Interactive 3D transformations that respond to user interactions for a modern feel.
+
+- **Video Transitions**: Seamlessly integrated video elements to enhance storytelling and flow.
+
+- **Smooth UI/UX**: Polished interfaces with buttery-smooth interactions for an intuitive user journey.
+
+- **Completely Responsive**: Flawless adaptation across all devices, ensuring a consistent experience.
+
+and many more, including code architecture and reusability
+
+## Getting Started
+
+Follow these steps to set up the project locally on your machine.
+
+**Prerequisites**<br />
+Make sure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/en)
+
+**Clone the Repository**
+
+```
+git clone https://github.com/maryam-nasir/zentry-clone.git
+cd zentry-clone
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+**Installation**<br />
+Install the project dependencies using npm:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
 ```
+npm install
+```
+
+**Running the Project**<br />
+Run:
+
+```
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in the browser to view the project.
+
+## Access the Deployed version on Vercel
+
+The app is deployed on Vercel and can be accessed here: [Zentry Clone](https://zentry-clone-rouge.vercel.app/).
+
+## Acknowledgements
+
+I have developed this website by following the JavaScript Mastery tutorial on [YouTube](https://www.youtube.com/watch?v=zA9r5zTllx4).
