@@ -14,7 +14,7 @@ const HeroSection = () => {
   const [loadedVideos, setLoadedVideos] = useState<number>(0);
 
   const totalVideos = 4;
-  const nextVideoRef = useRef(null);
+  const nextVideoRef = useRef<HTMLVideoElement>(null);
 
   const upcomingVideoIndex = (index: number) => (index % totalVideos) + 1;
 
@@ -35,7 +35,9 @@ const HeroSection = () => {
           height: "100%",
           duration: 1,
           ease: "power1.inOut",
-          onStart: () => nextVideoRef.current.play(),
+          onStart: () => {
+            nextVideoRef?.current?.play();
+          },
         });
 
         gsap.from("#next-video", {
@@ -43,7 +45,9 @@ const HeroSection = () => {
           scale: 0,
           duration: 1.5,
           ease: "power1.inOut",
-          onStart: () => nextVideoRef.current.play(),
+          onStart: () => {
+            nextVideoRef?.current?.play();
+          },
         });
       }
     },
