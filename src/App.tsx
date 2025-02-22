@@ -1,10 +1,22 @@
+import AboutSection from "./components/AboutSection";
+import ContactSection from "./components/ContactSection";
+import FeaturesSection from "./components/FeaturesSection";
+import Footer from "./components/Footer";
+import HeroSection from "./components/HeroSection";
+import Navbar from "./components/Navbar";
+import StorySection from "./components/StorySection";
+
 const App = () => {
   return (
-    <>
-      <h1 className="text-5xl font-bold text-orange-500">
-        Welcome to Awwwards Website
-      </h1>
-    </>
+    <main className="relative min-h-screen w-screen overflow-x-hidden">
+      <Navbar />
+      <HeroSection />
+      <AboutSection />
+      <FeaturesSection />
+      <StorySection />
+      <ContactSection />
+      <Footer />
+    </main>
   );
 };
 
