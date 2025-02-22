@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react";
+
 import AboutSection from "./components/AboutSection";
 import ContactSection from "./components/ContactSection";
 import FeaturesSection from "./components/FeaturesSection";
@@ -9,6 +11,7 @@ import StorySection from "./components/StorySection";
 const App = () => {
   return (
     <main className="relative min-h-screen w-screen overflow-x-hidden">
+      <Analytics />
       <Navbar />
       <HeroSection />
       <AboutSection />
