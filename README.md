@@ -26,8 +26,6 @@ Zentry is a beautiful and visually captivating website which features scroll-tig
 
 - **Completely Responsive**: Flawless adaptation across all devices, ensuring a consistent experience.
 
-and many more, including code architecture and reusability
-
 ## Getting Started
 
 Follow these steps to set up the project locally on your machine.
